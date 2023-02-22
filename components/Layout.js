@@ -3,8 +3,8 @@ import Head from "next/head";
 
 function Layout({ title, children }) {
   const styles = {
-    wrapper: "bg-gray-300",
-    content: "container mx-auto max-w-xl pt-8 min-h-screen",
+    wrapper: "bg-white min-h-screen",
+    content: "container flex justify-center mx-auto max-w-xxl pt-8 ",
   };
   return (
     <div className={styles.wrapper}>
@@ -14,10 +14,7 @@ function Layout({ title, children }) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
-      <main className={styles.content}>
-      {children}
-      </main>
+      <main className={styles.content}>{children}</main>
     </div>
   );
 }
